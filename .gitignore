@@ -1,0 +1,51 @@
+# Any IDEs
+.vs/
+.idea/
+.vscode/
+
+# CMake stuff, people should generate these themselves if they want to.
+out/
+libs/
+build/
+cmake-build-debug/
+cmake-build-debug-visual-studio/
+vcpkg.json
+CMakeSettings.json
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Config file
+config.json
+
+libdpp.a
