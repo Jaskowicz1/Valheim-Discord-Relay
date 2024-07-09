@@ -6,13 +6,14 @@
 #include "config.h"
 
 int main(int argc, char *argv[]) {
+
 	config::init("config.json");
 
 	std::this_thread::sleep_for(std::chrono::minutes(config::get("start_delay")));
 
-    rconpp::rcon rcon_client(config::get("rcon_ip").dump(), std::stoi(config::get("rcon_port").dump()), config::get("rcon_password").dump());
+	rconpp::rcon rcon_client(config::get("rcon_ip").dump(), std::stoi(config::get("rcon_port").dump()), config::get("rcon_password").dump());
 
-    dpp::cluster bot(config::get("bot_token"), dpp::i_default_intents | dpp::i_message_content | dpp::i_guild_members, 0, 0, 1, true, dpp::cache_policy::cpol_none);
+	dpp::cluster bot(config::get("bot_token"), dpp::i_default_intents | dpp::i_message_content | dpp::i_guild_members, 0, 0, 1, true, dpp::cache_policy::cpol_none);
 
 	VDR::botRef = &bot;
 
@@ -50,8 +51,8 @@ int main(int argc, char *argv[]) {
 		});
 	});
 
-    bot.start(dpp::st_wait);
-    return 0;
+	bot.start(dpp::st_wait);
+	return 0;
 }
 
 void VDR::read_console() {
