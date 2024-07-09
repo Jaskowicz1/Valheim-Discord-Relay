@@ -9,6 +9,7 @@ libs/
 build/
 cmake-build-debug/
 cmake-build-debug-visual-studio/
+cmake-build-release
 vcpkg.json
 CMakeSettings.json
 

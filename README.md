@@ -33,3 +33,10 @@ You can gather a bot token by creating a Discord bot [here](https://discord.com/
 
 The `channel_id` is the ID of the channel that you want all the chat messages to go to.
 
+## Compiling
+
+You'll need to build [D++](https://github.com/brainboxdotcc/dpp) from source by doing `cmake -B build -DBUILD_SHARED_LIBS=OFF` to build a static D++ library.
+
+Then, you'll want to place the exported `libdpp.a` file in the `Valheim-Discord-Relay` folder (You'll have this folder after cloning the project).
+
+Now, you can build Valheim Discord Relay!
